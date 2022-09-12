@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*
+COLORS
+#DB504A
+#FF6F59
+#254441
+#43AA8B
+#B2B09B
+*/
+
+header{
+    background-color: #254441;
+    color: #DB504A;
+    font-size: 1.7em;
+    padding: 14vw;
+    background: url('./Imagens/img1000.jpg') center left;
+}
+
+main {
+    background-color: #B2B09B;
+    color: #FF6F59;
+    padding: 15vw;
+}
+
+img#logo {
+    width: 80px;
+    border-radius: 25px;
+    
+}
+
+footer {
+    background-color: black;
+    padding: 1vh;
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+}
