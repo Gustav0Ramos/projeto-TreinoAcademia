@@ -17,13 +17,26 @@ header{
     color: #DB504A;
     font-size: 1.7em;
     padding: 14vw;
-    background: url('./Imagens/img1000.jpg') center left;
+    background: url('./Imagens/img1000.jpg') center no-repeat;
+    background-size: cover;
 }
 
 main {
-    background-color: #B2B09B;
+    background-color: #254441;
     color: #FF6F59;
     padding: 15vw;
+}
+
+a{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    transition-duration: 2s;
 }
 
 img#logo {
