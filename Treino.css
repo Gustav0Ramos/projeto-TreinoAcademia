@@ -1,7 +1,9 @@
+@charset "UTF-8";
+
 * {
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 /*
 COLORS
@@ -12,43 +14,73 @@ COLORS
 #B2B09B
 */
 
-header{
-    background-color: #254441;
-    color: #DB504A;
-    font-size: 1.7em;
-    padding: 14vw;
-    background: url('./Imagens/img1000.jpg') center no-repeat;
-    background-size: cover;
+body, html{
+    background-image: linear-gradient(to bottom, #388870, #254441); /* Cor de fundo */
+    background-attachment: fixed;
+    height: 100vh; /* Altura 100% */
+    width: 100vw; /* Largura 100% */
+
+    color: white; /* Cor da letra do texto */
 }
 
-main {
-    background-color: #254441;
-    color: #FF6F59;
-    padding: 15vw;
+div#tela {
+    position: fixed;  /*Faz com que a tela não tenha rolagem*/
+    height: 100vh;
+    width: 100vw;
 }
 
-a{
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
-    text-decoration: none;
-}
+ header {
+    height: 20%;
+ }
 
-a:hover {
-    text-decoration: underline;
-    transition-duration: 2s;
-}
+ header > h1 {
+    padding: 15px;
+    text-align: center;
+ }
 
-img#logo {
+ main {
+    margin: auto;
+    height: 76%;
+    max-width: 75%;
+ }
+ main > p { /* Estou mexendo no paragrafo que está em main */
+    padding: 35px; /* espaço entre <p> */
+    margin: 5px;
+    border: 1px solid #254441;
+    border-radius: 10px;
+    background-color: #d0fdf0;
+ }
+ main > p:hover{
+    background-color: #d0fdf07e;
+    cursor: pointer;
+ }
+
+ main > p > a { /* Estou mexendo no link */
+    color: #254441; /* cor da letra */ 
+    font-weight: bolder; /* letra esté em negrito */
+    text-decoration: none; /* não tem decoração no link, era sublinhado */
+    padding: 25px; 
+ }
+
+ main > p > a > img#logo{ /* Imagens de treino */
     width: 80px;
     border-radius: 25px;
-    
+ }
+
+ a:hover { /* decoração dos links */
+    text-decoration: underline;
+    transition-duration: .2s;
 }
 
-footer {
-    background-color: black;
-    padding: 1vh;
+ footer { /* Rodapé da página */
+    height: 10%;
+ }
+ footer > p {
     color: white;
-    font-weight: lighter;
     text-align: center;
-}
+ }
+
+ footer > p > a {
+    color: white;
+    text-decoration: none;
+ }
