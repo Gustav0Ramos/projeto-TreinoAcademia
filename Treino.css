@@ -15,7 +15,11 @@ COLORS
 */
 
 body, html{
-    background-image: linear-gradient(to bottom, #388870, #254441); /* Cor de fundo */
+    background-image: linear-gradient(to bottom, #388870, #254441);  /*Cor de fundo */
+    background-image: url(./Imagens/pexels-tima-miroshnichenko-6389075.jpg); /* Imagem de fundo */
+    background-position: center center; /* Posição da imagem centro no centro */
+    background-repeat: no-repeat; /* A imagem não repete caso a tela seja grande */
+    background-size: cover; /* Redimensione a imagem de fundo para cobrir todo o contêiner */
     background-attachment: fixed;
     height: 100vh; /* Altura 100% */
     width: 100vw; /* Largura 100% */
@@ -36,6 +40,7 @@ div#tela {
  header > h1 {
     padding: 15px;
     text-align: center;
+    font-size: 3em;
  }
 
  main {
@@ -53,6 +58,7 @@ div#tela {
  main > p:hover{
     background-color: #d0fdf07e;
     cursor: pointer;
+    text-decoration: underline;
  }
 
  main > p > a { /* Estou mexendo no link */
@@ -68,19 +74,23 @@ div#tela {
  }
 
  a:hover { /* decoração dos links */
-    text-decoration: underline;
     transition-duration: .2s;
 }
 
- footer { /* Rodapé da página */
+ div { /* Rodapé da página */
     height: 10%;
  }
- footer > p {
+ div > p {
     color: white;
     text-align: center;
  }
 
- footer > p > a {
+ div > p > a {
     color: white;
     text-decoration: none;
+ }
+
+ div > p > a:hover {
+   text-decoration: underline;
+   font-weight: 500;
  }
